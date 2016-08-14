@@ -1,0 +1,110 @@
+/* line 10, ../sass/peprally.scss */
+body {
+  margin: 0;
+}
+
+/* line 14, ../sass/peprally.scss */
+nav {
+  background-color: #CC5D00;
+  height: 80px;
+  padding: 0 20px;
+  position: fixed;
+  color: seashell;
+  vertical-align: top;
+  width: 100%;
+}
+/* line 23, ../sass/peprally.scss */
+nav #peprallyLogo {
+  display: inline-block;
+  height: 70px;
+  margin-right: 20px;
+}
+/* line 29, ../sass/peprally.scss */
+nav #navButtons {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  color: inherit;
+}
+/* line 35, ../sass/peprally.scss */
+nav #navButtons li {
+  color: inherit;
+  display: inline-block;
+  height: 100%;
+}
+/* line 42, ../sass/peprally.scss */
+nav button {
+  margin: 0 20px;
+  font-size: 14pt;
+  color: inherit;
+  cursor: pointer;
+  height: 100%;
+  padding-top: 6.33333px;
+}
+/* line 50, ../sass/peprally.scss */
+nav button:focus {
+  outline: 0;
+}
+
+/* line 56, ../sass/peprally.scss */
+section {
+  height: 600px;
+  width: 100%;
+}
+
+/* line 61, ../sass/peprally.scss */
+header {
+  font-size: 48pt;
+  text-align: center;
+}
+
+/* line 66, ../sass/peprally.scss */
+h1 {
+  font-size: 48pt;
+  text-align: center;
+  padding-top: 236px;
+}
+
+/* line 72, ../sass/peprally.scss */
+#mainContent {
+  padding-top: 80px;
+}
+
+/* line 76, ../sass/peprally.scss */
+#heroContent {
+  background: url(../../images/PepRally_Cover.svg) no-repeat;
+  background-size: cover;
+}
+
+/* line 81, ../sass/peprally.scss */
+#survey {
+  background-color: #343434;
+}
+
+/* line 85, ../sass/peprally.scss */
+#board {
+  background-color: #D26B20;
+}
+
+/* line 89, ../sass/peprally.scss */
+footer {
+  background-color: #343434;
+  color: white;
+  height: 200px;
+  padding: 50px 200px;
+}
+/* line 95, ../sass/peprally.scss */
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5%;
+}
+/* line 100, ../sass/peprally.scss */
+footer ul h2 {
+  font-size: 18pt;
+  margin-bottom: 20px;
+}
+/* line 105, ../sass/peprally.scss */
+footer ul li {
+  margin-bottom: 10px;
+}
