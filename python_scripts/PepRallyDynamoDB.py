@@ -9,7 +9,7 @@ class PepRallyDynamoDB:
 	SURVEY_RESULTS_TABLE = "SurveyResults"
 
 	def __init__(self):
-		#keys found in ~/.aws/credentials file
+		#keys found in ~/.aws/credentials file with profile pep-rally
 		self.conn = boto.dynamodb2.connect_to_region(self.AWS_REGION,profile_name="pep-rally")
 		self.conn.list_tables()	
 		self.survey_table = Table(self.SURVEY_RESULTS_TABLE,connection=self.conn)
