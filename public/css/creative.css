@@ -211,6 +211,8 @@ header .header-footer {
   }
   header .header-content .header-content-inner h1 {
     font-size: 70px;
+    text-transform:capitalize;
+    font-variant:small-caps;
   }
   header .header-content .header-content-inner p {
     font-size: 25px;
