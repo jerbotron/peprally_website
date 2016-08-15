@@ -9,10 +9,10 @@ body {
   width: 100%;
 }
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Gotham Rounded A,Gotham Rounded B,HelveticaNeue,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
 }
 hr {
-  border-color: #F05F40;
+  border-color: #D26B20;
   border-width: 3px;
   max-width: 50px;
 }
@@ -23,11 +23,11 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #F05F40;
+  color: #D26B20;
 }
 a:hover,
 a:focus {
-  color: #eb3812;
+  color: #D26B20;
 }
 h1,
 h2,
@@ -35,12 +35,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Gotham Rounded A,Gotham Rounded B,HelveticaNeue,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
 }
 p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: #999;
 }
 .bg-primary {
   background-color: #D26B20;
@@ -64,7 +65,7 @@ aside {
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Gotham Rounded A,Gotham Rounded B,HelveticaNeue,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -167,19 +168,21 @@ header .header-content {
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
-  font-weight: 700;  
+  font-weight: 600;  
   margin-top: 0;
   margin-bottom: 0;
   font-size: 30px;
+  font-family: Gotham Rounded A,Gotham Rounded B,HelveticaNeue,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
 }
 header .header-content .header-content-inner p {
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 16px;
   margin-bottom: 50px;
+  font-family: Gotham Rounded A,Gotham Rounded B,HelveticaNeue,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
 }
 header .header-footer {
   position: absolute;
@@ -189,6 +192,7 @@ header .header-footer {
   color: #fff;
   padding: 20px 15px;
   float: right;
+  font-family: Gotham Rounded A,Gotham Rounded B,HelveticaNeue,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
 }
 
 
@@ -213,16 +217,19 @@ header .header-footer {
     font-size: 70px;
     text-transform:capitalize;
     font-variant:small-caps;
+    
   }
   header .header-content .header-content-inner p {
     font-size: 25px;
     max-width: 80%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
   }
 }
-.section-heading {
-  margin-top: 0;
+.section-heading {  
+  margin-top: 20px;
+  color: #D26B20;
+  margin-bottom: 20px;
 }
 .service-box {
   max-width: 400px;
