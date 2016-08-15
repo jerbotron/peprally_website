@@ -1,3 +1,8 @@
+
+#script that gets responses from survey monkey and updates dynamo with the latest responses
+#can pass in a date and then the script only looks for responses that were completed after that
+#given date
+
 import argparse
 from SurveyMonkey import *
 from PepRallyDynamoDB import *

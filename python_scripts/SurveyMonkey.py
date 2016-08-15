@@ -35,10 +35,7 @@ class SurveyMonkey:
 		jres = response.json()
 		return jres['data']['surveys']
 		
-	#return a list of respondents for a given survey in an array
-	#do error checking
-	#probably have the date as an arguement --> ["started_modified_date"] variable (the format of this is YYYY-MM-DD HH:MM:SS) 
-	#can pass in the page as an arguement ---> ["page"]
+	#the format of the date is YYYY-MM-DD HH:MM:SS) 
 	def get_respondents(self,survey_id=None,page=None,last_modified_date=None):
 		if survey_id is None:
 			survey_id = self.PEP_RALLY_SURVEY_ID
@@ -67,7 +64,6 @@ class SurveyMonkey:
 		return jres['data']
 
 	#given the single response json, extract the email from it
-	#some stuff is coded so might need to change later on ??
 	#return None if email could not be found
 	def get_email_from_response(self,response_json):
 		email = None;
