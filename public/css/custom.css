@@ -1,0 +1,63 @@
+.bg-primary-ut {
+  background-color: #D26B20;
+}
+
+.bg-primary-light-ut {
+  background-color: #d77d3c;
+}
+
+.bg-primary-accent {
+  background-color: #343434;
+}
+
+.app-store-btn {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 6px 16px;
+    margin: 15px 15px 0 0;
+    border-radius: 4px
+}
+
+.app-store-btn img {
+    height: 24px;
+    float: left;
+    margin-right: 12px;
+    margin-top: 5px
+}
+
+.app-store-btn .label {
+    float: right
+}
+
+.app-store-btn .label * {
+    text-transform: uppercase;
+    display: block;
+    text-align: left
+}
+
+.white {
+    color: #FFF
+}
+
+.dark {
+    color: #000
+}
+
+.app-store-btn .label .label-availability {
+    color: hsla(0, 0%, 100%, .87);
+    font-weight: 400
+}
+
+.app-store-btn .label .label-store {
+    font-size: 16px;
+    margin-top: 5px
+}
+
+.app-store-btn:active,
+.app-store-btn:hover {    
+    background-color: rgba(210, 107, 32, .8)
+}
+
+.form-control {
+    background-color: #eeeeee
+}
