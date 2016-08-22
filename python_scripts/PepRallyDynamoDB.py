@@ -17,15 +17,18 @@ class PepRallyDynamoDB:
 
 	#hashkey is RESPONDENT_ID
 	#rangekey is DATE_MODIFIED
-	def write_survey_results(self,respondent_id,date_modified,email,raw_json=None):
+	def write_survey_results(self,respondent_id,date_modified,email,raw_json=None,ios_answer=None,ip_addr = None):
 		item_data = {}
 		item_data['RESPONDENT_ID'] = respondent_id
 		item_data['DATE_EXTRACTED'] = date_modified
 		item_data['EMAIL_ADDRESS'] = email
 		if raw_json is not None:
 			item_data['raw_response'] = raw_json
+		if ios_answer is not None:
+			item_data['ios_answer_choice'] = ios_answer
+		if ip_addr is not None:
+			item_data['ip_address'] = ip_addr
 		try: 
 			self.survey_table.put_item(data=item_data)
 		except ConditionalCheckFailedException,e:
 			print 'Respondent_id: {} already exists in the db!'.format(respondent_id)
-			#print e
