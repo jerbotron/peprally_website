@@ -7,8 +7,28 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+/*Custom Fonts*/
+@font-face {
+    font-family: 'Arvo';
+    src: url('fonts/Arvo-Regular.ttf');
+}
+@font-face {
+    font-family: 'Arvo-Bold';
+    src: url('fonts/Arvo-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('fonts/GothamRounded-Light.ttf');
+}
+@font-face {
+    font-family: 'GothamRounded-Medium';
+    src: url('fonts/GothamRounded-Medium.ttf');
+}
 .text-muted {
   color: #777777;
+  font-family: "GothamRounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
 }
 .text-primary {
   color: #d77d3c;
@@ -34,7 +54,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #d77d3c;
 }
 h1,
 h2,
@@ -69,7 +89,7 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #fec503;
+  background-color: #d77d3c;
   border-color: #f6bf01;
 }
 .btn-primary:active,
@@ -116,7 +136,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: white;
-  background-color: #fec503;
+  background-color: #d77d3c;
   border-color: #f6bf01;
 }
 .btn-xl:active,
@@ -151,14 +171,16 @@ fieldset[disabled] .btn-xl.active {
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #d77d3c;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  color: #fff;
+  /*font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;*/
 }
-.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:hover {
+  color: #d77d3c;
+}
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #fec503;
+  color: #fff;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -173,7 +195,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #d77d3c;
+  background-color: #fff;
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -184,7 +206,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #d77d3c;
+  color: #fff;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
@@ -195,7 +217,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #fec503;
+  background-color: #d77d3c;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -242,38 +264,36 @@ header .intro-text {
   padding-bottom: 50px;
 }
 header .intro-text .intro-lead-in {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
+  font-family: "GothamRounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
 }
 header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-family: "GothamRounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
   font-size: 50px;
   line-height: 50px;
+  margin-top: 25px;
   margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
+    padding-top: 200px;
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
+    font-family: "GothamRounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 75px;
+    font-family: "GothamRounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 85px;
     line-height: 75px;
+    margin-top: 50px;
     margin-bottom: 50px;
   }
 }
@@ -281,21 +301,22 @@ section {
   padding: 100px 0;
 }
 section h2.section-heading {
+  font-family: "GothamRounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 40px;
+  font-weight: bold;
   margin-top: 0;
   margin-bottom: 15px;
 }
 section h3.section-subheading {
-  font-size: 16px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-family: "GothamRounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
-  font-style: italic;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 .service-heading {
@@ -354,7 +375,7 @@ section h3.section-subheading {
   margin: 0;
 }
 #portfolio .portfolio-item .portfolio-caption p {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
   margin: 0;
@@ -423,8 +444,8 @@ section h3.section-subheading {
   z-index: 100;
   background-color: #d77d3c;
   color: white;
-  border-radius: 100%;
-  border: 7px solid #f1f1f1;
+  border-radius: 10px;
+  border: 3px solid #343434;
   text-align: center;
 }
 .timeline > li .timeline-image h4 {
@@ -524,7 +545,7 @@ section h3.section-subheading {
   }
   .timeline > li .timeline-image {
     width: 170px;
-    height: 170px;
+    height: 220px;
     margin-left: -85px;
   }
   .timeline > li .timeline-image h4 {
@@ -540,7 +561,7 @@ section h3.section-subheading {
 }
 .team-member img {
   margin: 0 auto;
-  border: 7px solid white;
+  border: 4px solid #dedede;
 }
 .team-member h4 {
   margin-top: 25px;
@@ -555,7 +576,7 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
+  /*background-image: url('../img/map-image.png');*/
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -609,7 +630,7 @@ section#contact .text-danger {
   color: #e74c3c;
 }
 footer {
-  padding: 25px 0;
+  padding: 25px 0 10px 0;
   text-align: center;
 }
 footer span.copyright {
@@ -617,6 +638,12 @@ footer span.copyright {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
+}
+footer p.copyright {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+  padding-top: 10px;
 }
 footer ul.quicklinks {
   margin-bottom: 0;
@@ -677,7 +704,7 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
 }
@@ -742,5 +769,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #d77d3c;
+  webkit-tap-highlight-color: #fff;
 }
