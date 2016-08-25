@@ -103,19 +103,17 @@ header .intro-heading .intro-logo {
     background-color: #d77d3c;
 }
 
-/*#about { 
-    background-color: #000
-}*/
-
 .details-caption {
     margin-top: 25px;
+    margin-bottom: 50px;
     text-align: center;
     font-family: "GothamRounded-Medium", "Helvetica Neue", Helvetica, Arial, cursive;
     font-size: 16px;
 }
 
 .timeline-body {
-    margin-top: 65px;
+    margin-top: 70px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -123,7 +121,28 @@ header .intro-heading .intro-logo {
     padding-top: 100px;
 }
 
-.img-custom {
-    border-radius: 10px;
-    border: 3px solid #343434;
+.img-details {
+    padding-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+    .details-item {
+        padding-right: 80px;
+    }
+
+    .img-details {
+        padding-bottom: 0px;
+    }
+
+    .timeline-body {
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .details-caption {
+        margin-top: 25px;
+        text-align: center;
+        font-family: "GothamRounded-Medium", "Helvetica Neue", Helvetica, Arial, cursive;
+        font-size: 16px;
+    }
 }
