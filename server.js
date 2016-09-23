@@ -10,8 +10,8 @@ var transport = nodemailer.createTransport(smtpTransport({
 	secureConnection: false, // use SSL
 	port: 587, // port for secure SMTP
 	auth: {
-    	user: 'peprallyapp@gmail.com',
-    	pass: 'peprallytestuser'
+    	user: '***',
+    	pass: '***'
  	}	
 }));
 
